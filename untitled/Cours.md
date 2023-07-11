@@ -107,3 +107,34 @@ Il est possible de travailler avec des tableaux a plusieurs dimension La syntaxe
 Autre methode de creation: int [][] matrice; matrice = new int[2][]; matrice[0] = new int[4]; matrice[1] = new int[2];
 
 Encore une autre syntaxe: int [][] encoreUneAutreSyntaxe = {{1,2,3}{1,3,6}} Tableau a deux lignes et trois colonnes
+
+### Les conversions
+
+En java il existe deux types de conversions :
+
+les conversions implicites
+les conversions explicites
+Les conversions implicites
+
+Les conversions implicites sont des conversions qui sont faites automatiquement par le compilateur.
+
+int entier = 10;
+double decimal = entier; // conversion implicite
+Les conversions explicites
+
+Les conversions explicites sont des conversions qui sont faites par le programmeur.
+
+double decimal = 10.5;
+int entier = (int) decimal; // conversion explicite
+La conversion entre types numeriques est possible si le type de destination est plus grand que le type source.
+
+int entier = 10;
+double decimal = entier; // conversion implicite
+La conversion vers des chaines de caractères est possible pour tous les types.
+
+int entier = 10;
+String chaine = String.valueOf(entier); // conversion explicite
+Dans certains cas il n'y a pas besoin d'utiliser une methode pour convertir un type en chaine de caracteres.
+
+int entier = 10;
+String chaine = "" + entier; // conversion implicite
