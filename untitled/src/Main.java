@@ -14,7 +14,13 @@ public class Main {
                 "didier@gmail.com"
         };
 
-        // Compteur pour le nombre total d'e-mails
+        // Appel de la fonction pour calculer les % des fournisseurs
+        calculateEmailProviderPercentages(emails);
+    }
+
+    // Fonction pour calculer les pourcentages des fournisseurs de services de messagerie
+    public static void calculateEmailProviderPercentages(String[] emails) {
+        // Nombre total d'e-mails
         int totalEmails = emails.length;
 
         // Compteurs pour les fournisseurs de services de messagerie
